@@ -1,0 +1,24 @@
+.header {
+  padding: 40px;
+}
+
+.logo {
+  background-color: rgb(213, 58, 157, 0.3);
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgb(213, 58, 157);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgb(213, 58, 157), inset 0 0 10px rgb(213, 58, 157);
+}
+
+.logo__text {
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-size: 42px;
+  color: rgb(213, 58, 157);
+  transform: rotate(-45deg);
+}

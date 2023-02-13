@@ -1,0 +1,10 @@
+.home {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.home__welcome {
+  font-size: 50px;
+  margin-bottom: 40px;
+}

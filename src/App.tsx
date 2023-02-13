@@ -1,25 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Home from "./components/Home/Home";
+import Header from "./components/Layout/Header";
+import Navigation from "./components/Layout/Navigation";
+import NotFound from "./components/NotFound/NotFound";
+import Projects from "./components/Projects/Projects";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <div className="container">
+          <Header />
+          <div className="row">
+            <Navigation />
+            <div className="hologram-container">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+              <div className="holographic-effect"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Router>
   );
 }
 
