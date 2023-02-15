@@ -1,0 +1,12 @@
+.skills {
+  font-family: "Exo", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.skills > p {
+  margin: 5px 18px;
+}

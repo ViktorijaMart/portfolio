@@ -1,15 +1,21 @@
+import "./Skills.css";
+
 const Skills = () => {
   return (
-    <div className="text">
-      <h1>Skills</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
-        inventore laboriosam ad rem at, nulla voluptas explicabo quaerat vel
-        quisquam aperiam corporis asperiores nemo possimus consectetur soluta in
-        eum cupiditate aliquid fugit, magnam cumque facere iste necessitatibus.
-        A, exercitationem inventore, accusamus maxime minus repellat praesentium
-        autem nulla iusto dolor dignissimos!
-      </p>
+    <div className="skills">
+      <p>480 hours Full Stack course</p>
+      <p>HTML</p>
+      <p>CSS</p>
+      <p>JavaScript</p>
+      <p>React</p>
+      <p>TypeScript</p>
+      <p>Rest API</p>
+      <p>PHP</p>
+      <p>OOP</p>
+      <p>Laravel</p>
+      <p>MySQL</p>
+      <p>Git</p>
+      <p>GitHub</p>
     </div>
   );
 };
