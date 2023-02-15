@@ -1,0 +1,7 @@
+.about {
+  font-family: "Exo", sans-serif;
+}
+
+.about__text--underlined {
+  text-decoration: underline;
+}
