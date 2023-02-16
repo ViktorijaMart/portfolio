@@ -1,15 +1,15 @@
+import "./Contact.css";
+
 const Contact = () => {
   return (
-    <div className="text">
-      <h1>Contact</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
-        inventore laboriosam ad rem at, nulla voluptas explicabo quaerat vel
-        quisquam aperiam corporis asperiores nemo possimus consectetur soluta in
-        eum cupiditate aliquid fugit, magnam cumque facere iste necessitatibus.
-        A, exercitationem inventore, accusamus maxime minus repellat praesentium
-        autem nulla iusto dolor dignissimos!
-      </p>
+    <div className="contact">
+      <h2>To form a connection please press the button bellow</h2>
+      <a
+        href="mailto:viktorijamartinaityte@gmail.com?subject=Connection formed"
+        className="contact__link"
+      >
+        Connect
+      </a>
     </div>
   );
 };
