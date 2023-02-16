@@ -1,5 +1,8 @@
 .header {
   padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -21,4 +24,32 @@
   font-size: 42px;
   color: rgb(213, 58, 157);
   transform: rotate(-45deg);
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials__link {
+  color: rgb(213, 58, 157);
+  margin-left: 20px;
+  box-shadow: 0 0 10px rgb(213, 58, 157), inset 0 0 10px rgb(213, 58, 157);
+}
+
+.socials__link--custom {
+  display: flex;
+  align-items: center;
+  color: black;
+  /* margin-left: 20px; */
+  padding: 2px 3px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 3px;
+  background-color: rgb(213, 58, 157);
+  height: 35px;
+}
+
+.socials__icon {
+  font-size: 40px;
 }
