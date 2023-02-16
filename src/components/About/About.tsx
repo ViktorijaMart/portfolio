@@ -13,12 +13,13 @@ const About = () => {
     <div className="about">
       <h2 className="about__title">I'm Viktorija</h2>
       <p className="about__text">
-        I'm a junior{" "}
+        I'm an entry-level{" "}
         <span className="about__text--underlined">Software Developer</span> who
-        started this coders journey {dateDiff} months ago. I was always curious
+        started this coder's journey {dateDiff} months ago. I was always curious
         about how web pages or games came to life and was beyond excited when
         found CodeAcademy Full Stack course. My current favourite aesthetic is
-        cyberpunk and I recently started drawing.
+        cyberpunk and I recently started drawing. In the near future, I'm
+        planning to learn Blender.
       </p>
     </div>
   );
