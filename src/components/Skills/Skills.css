@@ -9,4 +9,5 @@
 
 .skills > p {
   margin: 5px 18px;
+  cursor: default;
 }
