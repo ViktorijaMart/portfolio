@@ -1,15 +1,34 @@
-const Projects = () => {
+import { Link } from "react-router-dom";
+
+import "./Projects.css";
+
+type project = {
+  id: number;
+  name: string;
+  categorie: string;
+  description: string;
+  languages: string[];
+  github: string;
+  page: string;
+};
+
+type props = {
+  projects: project[];
+};
+
+const Projects = (props: props) => {
   return (
-    <div className="text">
-      <h1>Projects</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
-        inventore laboriosam ad rem at, nulla voluptas explicabo quaerat vel
-        quisquam aperiam corporis asperiores nemo possimus consectetur soluta in
-        eum cupiditate aliquid fugit, magnam cumque facere iste necessitatibus.
-        A, exercitationem inventore, accusamus maxime minus repellat praesentium
-        autem nulla iusto dolor dignissimos!
-      </p>
+    <div className="projects">
+      <h2>Please choose a project</h2>
+      <div className="projects__links">
+        {props.projects.map((project) => {
+          return (
+            <Link to={`/projects/${project.id}`} className="project__link">
+              {project.name}
+            </Link>
+          );
+        })}
+      </div>
     </div>
   );
 };
