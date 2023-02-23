@@ -1,14 +1,19 @@
 .header {
+  width: 100vw;
   padding: 40px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  gap: 40px;
 }
 
 .logo {
   background-color: rgb(213, 58, 157, 0.3);
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
+  width: clamp(80px, 4.54rem + 1.8vw, 100px);
+  height: clamp(80px, 4.54rem + 1.8vw, 100px);
   transform: rotate(45deg);
   display: flex;
   justify-content: center;
@@ -21,7 +26,8 @@
 .logo__text {
   text-decoration: none;
   font-family: "Orbitron", sans-serif;
-  font-size: 42px;
+  /* font-size: 42px; */
+  font-size: clamp(36px, 2.1rem + 0.5vw, 42px);
   color: rgb(213, 58, 157);
   transform: rotate(-45deg);
 }
@@ -29,11 +35,11 @@
 .socials {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .socials__link {
   color: rgb(213, 58, 157);
-  margin-left: 20px;
   box-shadow: 0 0 10px rgb(213, 58, 157), inset 0 0 10px rgb(213, 58, 157);
 }
 
@@ -41,15 +47,21 @@
   display: flex;
   align-items: center;
   color: black;
-  /* margin-left: 20px; */
-  padding: 2px 3px;
-  font-size: 30px;
+  padding: 0 3px;
+  font-size: 28px;
   font-weight: bold;
   border-radius: 3px;
   background-color: rgb(213, 58, 157);
-  height: 35px;
+  height: clamp(31px, 1.86rem + 0.3vw, 34px);
 }
 
 .socials__icon {
-  font-size: 40px;
+  /* font-size: 40px; */
+  font-size: clamp(36px, 2.1rem + 0.5vw, 40px);
+}
+
+@media (min-width: 433px) {
+  .header {
+    justify-content: space-between;
+  }
 }

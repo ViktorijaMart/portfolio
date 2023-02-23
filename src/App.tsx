@@ -15,29 +15,31 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="container">
-          <Header />
-          <div className="row">
-            <Navigation />
-            <div className="hologram-container">
-              <div className="hologram-text">
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/about" element={<About />} />
-                  <Route path="/skills" element={<Skills />} />
-                  <Route
-                    path="/projects"
-                    element={<Projects projects={projects} />}
-                  />
-                  <Route
-                    path="/projects/:id"
-                    element={<Project projects={projects} />}
-                  />
-                  <Route path="/contact" element={<Contact />} />
-                  <Route path="*" element={<NotFound />} />
-                </Routes>
+        <div className="background--black">
+          <div className="container">
+            <Header />
+            <div className="row">
+              <Navigation />
+              <div className="hologram-container">
+                <div className="hologram-text">
+                  <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/skills" element={<Skills />} />
+                    <Route
+                      path="/projects"
+                      element={<Projects projects={projects} />}
+                    />
+                    <Route
+                      path="/projects/:id"
+                      element={<Project projects={projects} />}
+                    />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="*" element={<NotFound />} />
+                  </Routes>
+                </div>
+                <div className="holographic-effect"></div>
               </div>
-              <div className="holographic-effect"></div>
             </div>
           </div>
         </div>
