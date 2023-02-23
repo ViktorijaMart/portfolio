@@ -5,11 +5,11 @@ import "./Projects.css";
 type project = {
   id: number;
   name: string;
-  categorie: string;
+  category: string;
   description: string;
   languages: string[];
   github: string;
-  page: string;
+  page: string | null;
 };
 
 type props = {
@@ -17,17 +17,34 @@ type props = {
 };
 
 const Projects = (props: props) => {
+  const frontendProjects = props.projects.filter(
+    (project) => project.category === "frontend"
+  );
+
+  const backendProjects = props.projects.filter(
+    (project) => project.category === "backend"
+  );
+
+  function displayProject(projects: project[]) {
+    return projects.map((project) => {
+      return (
+        <Link to={`/projects/${project.id}`} className="projects__link">
+          {project.name}
+        </Link>
+      );
+    });
+  }
+
   return (
     <div className="projects">
       <h2>Please choose a project</h2>
       <div className="projects__links">
-        {props.projects.map((project) => {
-          return (
-            <Link to={`/projects/${project.id}`} className="project__link">
-              {project.name}
-            </Link>
-          );
-        })}
+        <>
+          <h3 className="project__category">Front End</h3>
+          {displayProject(frontendProjects)}
+          <h3 className="project__category">Back End</h3>
+          {displayProject(backendProjects)}
+        </>
       </div>
     </div>
   );
