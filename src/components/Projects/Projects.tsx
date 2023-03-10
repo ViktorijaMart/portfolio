@@ -42,7 +42,7 @@ const Projects = (props: props) => {
         <>
           <h3 className="project__category">Front End</h3>
           {displayProject(frontendProjects)}
-          <h3 className="project__category">Back End</h3>
+          <h3 className="project__category">Full Stack</h3>
           {displayProject(backendProjects)}
         </>
       </div>
