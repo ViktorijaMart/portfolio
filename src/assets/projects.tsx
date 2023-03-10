@@ -4,10 +4,10 @@ export const projects = [
     name: "Portfolio",
     category: "frontend",
     description:
-      "Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor. Hodor hodor; hodor hodor - hodor, hodor, hodor hodor. Hodor, hodor. Hodor. Hodor, hodor hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor HODOR!",
+      "This is a portfolio I created to display my proudest projects to my future employer. Its design is inspired by Cyberpunk aesthetic. To see the code, and more info about the project visit the GitHub link provided above.",
     languages: ["HTML", "CSS", "Javascript", "React", "TypeScript"],
     github: "https://github.com/ViktorijaMart/portfolio",
-    page: "https://github.com/ViktorijaMart",
+    page: "https://viktorijamart.github.io/portfolio/",
   },
   {
     id: 2,
