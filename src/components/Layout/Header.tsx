@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo">
-        <Link to="/portfolio/" className="logo__text">
+        <Link to="/" className="logo__text">
           VM
         </Link>
       </div>
