@@ -4,6 +4,8 @@ This is a project I created to show my proudest projects to my future employer.
 
 It's inspired by the cyberpunk aesthetic. I made the navigation and logo to look like neon street signs. The main info is displayed as a hologram.
 
+[Link to the portfolio website](https://viktorijamart.github.io/portfolio/)
+
 ## Details
 
 To create the holographic effect I used [this code](https://codepen.io/johnlouie04/pen/NeJBwO). I just removed the animation as it felt too distracting.
